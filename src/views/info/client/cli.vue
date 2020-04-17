@@ -118,7 +118,7 @@ export default {
                     this.ary = "";
                     this.num = "";
                 }
-                this.ary = data.data;
+                this.ary = data
                 this.num = data.totalPage;
             });
         }

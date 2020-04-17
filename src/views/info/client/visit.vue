@@ -77,7 +77,7 @@ export default {
                     alert("这位客户没有回访记录");
                 }
                 console.log(data)
-                data = data.data;
+              
                 this.ary = data;
             });
         },

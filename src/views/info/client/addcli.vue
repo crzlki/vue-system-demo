@@ -121,7 +121,7 @@ export default {
             };
             this.$store.dispatch("getcustinfo", obj).then(data => {
                 console.log(data);
-                data = data.data;
+             
                 (this.username = data.name),
                     (this.sex = data.sex),
                     (this.email = data.email),

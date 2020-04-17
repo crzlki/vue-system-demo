@@ -39,7 +39,7 @@ export default {
         },
         gain() {
             this.$store.dispatch("getinfouser").then(data => {
-                data = data.data;
+               
                 this.username = data.name;
             });
         },
