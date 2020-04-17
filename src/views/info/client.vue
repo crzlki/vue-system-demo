@@ -31,7 +31,8 @@ export default {
     display: flex;
     .left {
         flex: 1.5;
-        background: rgb(49, 43, 43);
+        background: rgb(19, 16, 16);
+        color:white;
         ul {
             padding: 30px 50px 0 50px;
             font-size: 18px;

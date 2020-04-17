@@ -98,7 +98,7 @@ export default {
 <style lang="less" scoped>
 .visit {
     width: 60%;
-    background: hotpink;
+    background: rgb(221, 232, 236);
     position:relative;
     .main {
         table {

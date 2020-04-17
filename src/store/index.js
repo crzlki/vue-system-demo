@@ -5,7 +5,6 @@ import axios from '../api/api'
 Vue.use(Vuex)
 // import {} from '../api/api.js'
 
-
 export default new Vuex.Store({
     state: {
     },
@@ -20,10 +19,10 @@ export default new Vuex.Store({
             return axios.get('/user/login').then((data) => {
                 
                 if (data.code === 0) {
-                    console.log('我已经登录啦')
+                    console.log('Log in successfully')
                     return
                 } else {
-                    alert('您还未登录，请返回登录页面')
+                    alert('Plz login first')
                     return new Promise((resolve,reject)=>{
                         reject()
                     })
@@ -53,7 +52,6 @@ export default new Vuex.Store({
         postadduser({commit},option){
             console.log(commit)
             return axios.post('/user/add',option).then(data=>{
-             
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }
@@ -75,9 +73,8 @@ export default new Vuex.Store({
             return axios.get('/user/info',{
                 params:option
             }).then(data=>{
-   
                 if(data.code === 0){
-                    return Promise.resolve(data)
+                    return Promise.resolve(data.data)
                 }
             })
         },
@@ -87,7 +84,6 @@ export default new Vuex.Store({
             return axios.get('/user/delete',{
                 params:option
             }).then(data=>{
-     
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }

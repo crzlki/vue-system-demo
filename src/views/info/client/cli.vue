@@ -151,7 +151,7 @@ export default {
             tr {
                 display: flex;
                 height: 30px;
-                background: rgb(92, 90, 90);
+                background: rgb(177, 170, 170);
                 align-items: center;
 
                 td {
