@@ -34,7 +34,7 @@ export default {
                     })
                     .then(data => {
                         console.log(data)
-                        data = data.data;
+                        // data = data.data;
                         if (data.code === 0) {
                             alert("登录成功");
                             localStorage.setItem("power",data.power);
