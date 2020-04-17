@@ -2,11 +2,11 @@
     <div class="login">
         <!-- <div class="loginBox"> -->
         <h2></h2>
-        <span>为保护企业的数据安全，请妥善保管密码</span>
+        <span>Welcome to my customer system demo</span>
         <div class="inpBox">
-            <input type="text" placeholder="请输入用户名/手机号/邮箱" v-model="userName" />
-            <input type="text" placeholder="请输入登录密码" v-model="password" />
-            <button @click="login">登陆</button>
+            <input type="text" placeholder="username/email/phone" v-model="userName" />
+            <input type="text" placeholder="password" v-model="password" />
+            <button @click="login">Login</button>
         </div>
         <!-- </div> -->
     </div>
@@ -25,8 +25,8 @@ export default {
     },
     methods: {
         login() {
-            !this.userName ? alert("用户名不能为空") : null;
-            !this.password ? alert("登录密码不能为空") : null;
+            !this.userName ? alert("Plz type any") : null;
+            !this.password ? alert("Plz type any") : null;
             if (this.userName && this.password) {
                 axios.post("/user/login", {
                         account: this.userName,
@@ -36,7 +36,7 @@ export default {
                         console.log(data)
                       
                         if (data.code === 0) {
-                            alert("登录成功");
+                            alert("Success");
                             localStorage.setItem("power",data.power);
                             console.log(localStorage)
                             this.$router.push("/info");
@@ -80,7 +80,7 @@ export default {
         button {
             width: 300px;
             height: 30px;
-            background: rgb(211, 226, 243);
+            background: rgb(68, 141, 224);
         }
     }
     // }
