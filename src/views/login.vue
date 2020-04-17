@@ -33,6 +33,7 @@ export default {
                         password: md5(this.password)
                     })
                     .then(data => {
+                        console.log(data)
                         data = data.data;
                         if (data.code === 0) {
                             alert("登录成功");
