@@ -134,7 +134,7 @@ export default {
     .main {
         width: 450px;
         height: 600px;
-        background: chocolate;
+        background: rgb(233, 205, 184);
         display: flex;
         flex-direction: column;
         justify-content: space-around;

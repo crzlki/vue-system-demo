@@ -58,7 +58,7 @@ export default {
         tr{
             display:flex;
             height: 30px;
-            background:chartreuse;
+            background:rgb(221, 226, 216);
             align-items:center;
             text-align:center;
             *{

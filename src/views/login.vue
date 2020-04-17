@@ -80,7 +80,7 @@ export default {
         button {
             width: 300px;
             height: 30px;
-            background: rgb(74, 144, 224);
+            background: rgb(211, 226, 243);
         }
     }
     // }

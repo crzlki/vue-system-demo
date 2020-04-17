@@ -31,7 +31,7 @@ export default {
     display: flex;
     .left {
         flex: 1.5;
-        background: red;
+        background: rgb(49, 43, 43);
         ul {
             padding: 30px 50px 0 50px;
             font-size: 18px;
@@ -44,7 +44,7 @@ export default {
     }
     .right {
         flex: 8;
-        background: yellow;
+        background: rgb(255, 255, 248);
     }
 }
 </style>
