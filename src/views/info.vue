@@ -1,16 +1,16 @@
 <template>
     <div class="info">
         <header ref="h">
-            <h2>CRM客户管理系统</h2>
+            <h2>Customer management demo Vue</h2>
             <div class="client">
-                <router-link class="link" to="/info/organ">组织结构</router-link>
-                <router-link class="link" to="/info/client">客户管理</router-link>
+                <router-link class="link" to="/info/organ">Organization</router-link>
+                <router-link class="link" to="/info/client">Customer</router-link>
             </div>
             <div></div>
             <div></div>
             <div class="quit">
-                您好：{{username}}
-                <a @click="quit">安全退出</a>
+                Hellow：{{username}}
+                <a @click="quit">Sign out</a>
             </div>
         </header>
         <div ref="v" class="view">
@@ -45,7 +45,7 @@ export default {
         },
         quit(){
             this.$store.dispatch('getsignout').then(()=>{
-                alert('退出登录,请重新登录')
+                alert('You just logged out')
                 this.$router.push('/login')
             })
         }

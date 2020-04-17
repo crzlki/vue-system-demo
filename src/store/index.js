@@ -17,7 +17,6 @@ export default new Vuex.Store({
         //登录
         getlogin() {
             return axios.get('/user/login').then((data) => {
-                
                 if (data.code === 0) {
                     console.log('Log in successfully')
                     return

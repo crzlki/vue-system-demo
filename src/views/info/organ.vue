@@ -2,30 +2,30 @@
     <div class="organ">
         <div class="left">
             <ul>
-                员工管理
+                Staff
                 <router-link to="/info/organ/userlist" tag="li">
-                    员工列表
+                    Staff List
                 </router-link>
                 <router-link to="/info/organ/adduser" tag="li">
-                    新增员工
+                    Add new comer
                 </router-link>
             </ul>
             <ul>
-                部门管理
+                Department
                 <router-link to="/info/organ/deparlist" tag="li">
-                    部门列表
+                    Department List
                 </router-link>
                 <router-link to="/info/organ/addepart" tag="li">
-                    新增部门
+                    Add new department
                 </router-link>
             </ul>
             <ul>
-                职务管理
+               Duty
                 <router-link to="/info/organ/joblist" tag="li">
-                    职务列表
+                    Title List
                 </router-link>
                 <router-link to="/info/organ/addjob" tag="li">
-                    新增职务
+                    Add new job title
                 </router-link>
             </ul>
         </div>

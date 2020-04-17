@@ -9,6 +9,7 @@
             <button @click="login">Login</button>
         </div>
         <!-- </div> -->
+        <p> This is just a simple demo from my previous job experience,and Not translated entirely,Sorry for that</p>
     </div>
 </template>
 

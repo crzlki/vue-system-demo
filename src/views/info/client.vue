@@ -2,10 +2,10 @@
     <div class="client">
         <div class="left">
             <ul>
-                客户管理
-                <router-link to="/info/client/cli" tag="li">全部客户</router-link>
-                <router-link to="/info/client/mycli" tag="li">我的客户</router-link>
-                <router-link to="/info/client/addcli" tag="li">新增客户</router-link>
+                Customer manage
+                <router-link to="/info/client/cli" tag="li">Get All</router-link>
+                <router-link to="/info/client/mycli" tag="li">My customer</router-link>
+                <router-link to="/info/client/addcli" tag="li">Add customer</router-link>
             </ul>
         </div>
         <div class="right">
