@@ -106,7 +106,7 @@ export default new Vuex.Store({
         //获取部门列表
         getdeparlist(){
             return axios.get('/department/list').then(data=>{
-              
+               
                 if(data.code === 0){
                     return Promise.resolve(data.data)
                 }
@@ -116,7 +116,6 @@ export default new Vuex.Store({
         postaddepart({commit},option){
             console.log(commit)
             return axios.post('/department/add',option).then(data=>{
-      
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }
@@ -129,7 +128,6 @@ export default new Vuex.Store({
                 params:option
             }).then(data=>{
                 console.log(data)
-
                 if(data.code === 0){
                     return Promise.resolve(data.data)
                 }
@@ -172,7 +170,6 @@ export default new Vuex.Store({
             return axios.get('/job/info',{
                 params:option
             }).then(data=>{
-        
                 if(data.code === 0){
                     return Promise.resolve(data.data)
                 }
@@ -182,7 +179,6 @@ export default new Vuex.Store({
         postaddjob({commit},option){
             console.log(commit)
             return axios.post('/job/add',option).then(data=>{
-     
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }
@@ -192,7 +188,6 @@ export default new Vuex.Store({
         postjobupdate({commit},option){
             console.log(commit)
             return axios.post('/job/update',option).then(data=>{
-      
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }
@@ -204,7 +199,6 @@ export default new Vuex.Store({
             return axios.get('/job/delete',{
                 params:option
             }).then(data=>{
-       
                 if(data.code === 0){
                     return Promise.resolve(data.data)
                 }
@@ -219,9 +213,8 @@ export default new Vuex.Store({
             return axios.get('/customer/list',{
                 params:option
             }).then(data=>{
-            
                 if(data.code === 0){
-                    return Promise.resolve(data)
+                    return Promise.resolve(data.data)
                 }else{
                     alert('没有您的客户啊亲')
                 }
@@ -233,7 +226,6 @@ export default new Vuex.Store({
             return axios.get('/customer/delete',{
                 params:option
             }).then(data=>{
-       
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }
@@ -247,7 +239,7 @@ export default new Vuex.Store({
             }).then(data=>{
     
                 if(data.code === 0){
-                    return Promise.resolve(data)
+                    return Promise.resolve(data.data)
                 }
             })
         },
@@ -255,7 +247,6 @@ export default new Vuex.Store({
         postcustadd({commit},option){
             console.log(commit)
             return axios.post('/customer/add',option).then(data=>{
-              
                 if(data.code === 0){
                     return Promise.resolve(data)
                 }
@@ -276,10 +267,9 @@ export default new Vuex.Store({
             console.log(commit)
             return axios.get('/visit/list',{
                 params:option
-            }).then(data=>{
-            
+            }).then(data=>{           
                 if(data.code === 0){
-                    return Promise.resolve(data)
+                    return Promise.resolve(data.data)
                 }
             })
         },
@@ -287,7 +277,6 @@ export default new Vuex.Store({
         postvisitadd({commit},option){
             console.log(commit)
             return axios.post('/visit/add',option).then(data=>{
-             
                 if(data.code === 0 ){
                     return Promise.resolve(data)
                 }
@@ -297,7 +286,6 @@ export default new Vuex.Store({
         postvisitupdate({commit},option){
             console.log(commit)
             return axios.post('/visit/update',option).then(data=>{
-               
                 if(data.code === 0 ){
                     return Promise.resolve(data)
                 }
